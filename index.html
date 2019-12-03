@@ -13,20 +13,39 @@
     <table>
         <tr>
             <td>
-                <form action="">
+                <form action="" onsubmit="event.preventDefault();onFormSubmit();" autocapitalize="off">
                     <div>
                         <label for="">Name</label>
-                        <input type="name">
+                        <input type="text" name="Name" id="Name">
                     </div>
                     <div>
-                        <label for="">Name</label>
-                        <input type="name">
+                        <label for="">Age</label>
+                        <input type="text" name="Age" id="Age">
                     </div>
                     <div>
-                        <label for="">Name</label>
-                        <input type="name">
+                        <label for="">Department</label>
+                        <input type="text" name="Department" id="Department">
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
                     </div>
                 </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Department</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </td>
         </tr>
     </table>
