@@ -30,7 +30,7 @@ function insertNewRecord(data){
 }
 
 function onEdit(td){
-    selectedRow = td.parentElement.parentElement;
+    selectedRow = td.parentElement.parentElement
     document.getElementById("Name").value;
 }
 
